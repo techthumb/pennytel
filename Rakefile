@@ -12,6 +12,9 @@ begin
     gem.authors = ["Kunal Parikh"]
     gem.add_development_dependency "rspec"
     gem.add_development_dependency "yard"
+    gem.add_dependency 'soap4r', '>=1.5.8'
+    gem.files = FileList['lib/**/*.rb']
+
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
