@@ -9,7 +9,7 @@ class PennyTel
     @penny_tel_api = PennyTelAPI.new
   end
 
-  def send_sms number, message
+  def sms number, message
     @penny_tel_api.sendSMS SendSMS.new(@username, @password, 1, number, message, Time.now)
   end 
 
